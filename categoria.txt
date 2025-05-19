@@ -1,0 +1,4 @@
+1;massas
+2;Bebibas
+3;Carnes
+4;Doces

@@ -1,0 +1,2 @@
+1;fornecedorA;312314
+2;fornecedorB;1234554
