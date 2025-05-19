@@ -1,0 +1,2 @@
+Cleber;50;Gerente;1;3000.0
+Leonardo;34;Caixa;2;1900.0
