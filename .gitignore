@@ -1,0 +1,24 @@
+# Ambiente virtual
+venv/
+
+# Arquivos temporários e caches
+__pycache__/
+*.py[cod]
+*.log
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações do VSCode
+.vscode/
+
+# Arquivos de ambiente/senha
+.env
+*.env
+venv/
+
+# Pastas de build
+build/
+dist/
+*.egg-info/

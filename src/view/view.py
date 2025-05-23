@@ -1,14 +1,7 @@
-from ..model.pessoa import *
-from ..model.produto import *
-from ..dao.pessoadao import *
-from ..dao.produtodao import *
-from ..controller.id import gerar_id
-from ..controller.escolhercategoria import escolher_categoria
-from ..controller.escolherfornecedor import escolher_fornecedor
-
-from time import sleep
 from .cadastrar import view_cadastrar
 from .verificar import view_verificar
+from .alterar import view_alterar
+from .excluir import view_excluir
 
 def view():
     while True:
@@ -18,9 +11,9 @@ def view():
         elif escolha == 1:
             view_cadastrar()
         elif escolha == 2:
-            print("Opção de alterar não implementada.")
+            view_alterar()
         elif escolha == 3:
-            print("Opção de remover não implementada.")
+            view_excluir()
         elif escolha == 4:
             view_verificar()
         elif escolha == 5:
@@ -29,5 +22,4 @@ def view():
             print("Opção de relatório não implementada.")
         else:
             print("Opção inválida. Tente novamente.")
-            sleep(0.5)
         

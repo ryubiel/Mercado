@@ -1,2 +1,3 @@
 1;Refrigerante Feliz;5.0;2;1
 2;Energetico Energia;10.0;2;1
+3;Carne Moida;20.0;3;2

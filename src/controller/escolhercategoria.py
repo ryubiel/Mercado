@@ -1,10 +1,13 @@
-from src.dao.produtodao import *
+from src.dao.produtodao import CategoriaDAO
+from time import sleep
                 
 def mostrar_categorias():
     categorias = CategoriaDAO.listar()
     print("Categorias disponíveis:")
+    sleep(0.5)
     for categoria in categorias:
-        print(f"ID: {categoria.id_categoria} - Nome: {categoria.nome}")         
+        print(f"ID: {categoria.id_categoria} - Nome: {categoria.nome}")
+        sleep(0.3)         
                 
 def escolher_categoria():
     mostrar_categorias()
@@ -20,3 +23,9 @@ def escolher_categoria():
         
     print("Categoria não encontrada.")
     return None
+
+def categoria_produto(valor):
+    categorias = CategoriaDAO.listar()
+    for categoria in categorias:
+        if int(valor) == categoria.id_categoria:
+            return categoria.nome

@@ -9,7 +9,7 @@ from time import sleep
 
 def view_cadastrar():
     while True:
-        cadastrar = int(input("O que deseja cadastrar \n1 - Cadastrar cliente\n2 - Cadastrar funcionário \n3 - Categoria \n4 - Fornecedor \n5 - Produto \n9 - Voltar \nEscolha uma opção: "))
+        cadastrar = int(input("O que deseja cadastrar \n1 - cliente\n2 - funcionário \n3 - Categoria \n4 - Fornecedor \n5 - Produto \n9 - Voltar \nEscolha uma opção: "))
         sleep(1)
         if cadastrar in [1, 2, 3, 4, 5]:
             if cadastrar in [1, 2]:
